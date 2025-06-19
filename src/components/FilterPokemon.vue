@@ -68,7 +68,7 @@ const getShinyPokemon = (pokemon: Pokemon)=>{
     <div v-if="isLoading" class="mb-4">Cargando...</div>
 
     <div class="w-full h-auto">
-      <div v-if="pokemons.length > 0" class="w-full space-y-4 grid sm:grid-cols-2 grid-cols-5 md:grid-cols-3 xl:grid-cols-4 gap-3">
+      <div v-if="pokemons.length > 0" class="w-full space-y-4 grid sm:grid-cols-2 grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
         <div
           v-for="pokemon in pokemons"
           :key="pokemon.name"
