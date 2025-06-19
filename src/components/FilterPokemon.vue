@@ -68,7 +68,7 @@ const getShinyPokemon = (pokemon: Pokemon)=>{
     <div v-if="isLoading" class="mb-4">Cargando...</div>
 
     <div class="w-full h-auto">
-      <div v-if="pokemons.length > 0" class="w-full  space-y-4 grid grid-cols-5 gap-3">
+      <div v-if="pokemons.length > 0" class="w-full space-y-4 grid sm:grid-cols-2 grid-cols-5 md:grid-cols-3 xl:grid-cols-4 gap-3">
         <div
           v-for="pokemon in pokemons"
           :key="pokemon.name"
@@ -82,7 +82,7 @@ const getShinyPokemon = (pokemon: Pokemon)=>{
             />
           </div>
 
-          <div class="bg-white p-4">
+          <div class="bg-white p-4 w-full">
             <h2 class="text-xl font-bold capitalize">{{ pokemon.name }}</h2>
             <p>Altura: {{ pokemon.height / 10 }} m</p>
             <p>Peso: {{ pokemon.weight / 10 }} kg</p>
